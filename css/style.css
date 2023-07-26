@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background: url(../images/karakalpakstan.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px #00000034;
+}
+
+.gif-content {
+  position: absolute;
+  background: url(../images/bg-gif.gif);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0;
+}
+
+.gif-content.active {
+  opacity: 0.4;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 75px;
+}
+
+.flag-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.karakalpak_flag {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  box-shadow: 5px 5px 20px 0, inset 0 8rem 0 #006effce, inset 0 8.3rem 0 #ffffff,
+    inset 0 8.7rem 0 #ff0000, inset 0 17.5rem 0 #ffee00da,
+    inset 0 18rem 0 #ff0000, inset 0 18.3rem 0 #ffffff, inset 0 26rem 0 #01c601;
+  padding: 0.2em 3em;
+}
+
+@media only screen and (max-width: 1040px) {
+  .karakalpak_flag {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .karakalpak_flag {
+    width: 30rem;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .karakalpak_flag {
+    width: 18rem;
+    border-radius: 5px;
+  }
+}
+
+.karakalpak_flag::before {
+  content: " ";
+  width: 7rem;
+  height: 6rem;
+  margin-top: 10px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: inset 0.8rem 0 0.1rem #fff;
+}
+
+.karakalpak_flag::after {
+  content: "\2605";
+  position: absolute;
+  font-size: 2rem;
+  width: 50%;
+  height: 50%;
+  left: 8rem;
+  top: 3rem;
+  color: #ffffff00;
+  line-height: 100%;
+  text-shadow: 1rem 0rem 0 #fff, 3rem 0rem 0 #fff, 0.1rem 1.6rem 0 #fff,
+    2rem 1.6rem 0 #fff, 4rem 1.6rem 0 #fff;
+}
+
+h6{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
